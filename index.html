@@ -37,7 +37,10 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              btn_primary: "#ABEF5F",
+              btn_primary: "#ABEF5F ",
+              // bg_clr: "#ABEF5F33",
+              btn_bg_clr: "#d4f6ae",
+              // bg_clr: "#d4f6ae",
             },
             fontFamily: {
               Manrope: "Manrope",
@@ -48,9 +51,9 @@
     </script>
   </head>
   <body class="font-Manrope bg-gradient-to-r from-white-500 to-white-100 ...">
-    <header>
+    <header class="w-11/12 mx-auto">
       <!-- Navbar section -->
-      <nav class="w-11/12 mx-auto">
+      <nav>
         <div class="navbar p-0 py-2">
           <div class="navbar-start space-x-2">
             <i
@@ -144,7 +147,38 @@
           </div>
         </div>
       </nav>
-      <!--  -->
+
+      <!-- Banner section -->
+      <section>
+        <div class="hero min-h-screen">
+          <div class="hero-content text-center">
+            <div>
+              <div class="flex justify-center">
+                <img class="" src="assets/banner.png " alt="" />
+              </div>
+              <h1 class="lg:text-6xl md:text-4xl text-3xl font-extrabold pt-5">
+                A barn house of this design has a <br />
+                striking appearance
+              </h1>
+              <p class="py-6">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                <br />
+                accents, and large windows that flood the space with natural
+                light.
+              </p>
+              <button
+                class="bg-btn_bg_clr px-5 py-2 rounded-full text-black font-bold"
+              >
+                View Details
+                <i
+                  class="fa-solid fa-arrow-right -rotate-45 .. w-7 h-7 bg-btn_primary rounded-full text-black inline-flex justify-center items-center"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
 
     <!-- Main section -->
