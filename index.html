@@ -40,7 +40,8 @@
               btn_primary: "#ABEF5F ",
               // bg_clr: "#ABEF5F33",
               btn_bg_clr: "#d4f6ae",
-              // bg_clr: "#d4f6ae",
+              bg_clr: "#f4f4f4",
+              bg_white: "#FFFFFF",
             },
             fontFamily: {
               Manrope: "Manrope",
@@ -181,8 +182,101 @@
       </section>
     </header>
 
-    <!-- Main section -->
-    <main></main>
+    <!-- Main section  min-h-screen-->
+    <main class="bg-bg_clr">
+      <!-- Design section -->
+      <section class="mb-10 lg:mb-20">
+        <div class="hero w-11/12 mx-auto">
+          <!-- <div>
+            <img src="assets/Vector.png" alt="" />
+          </div> -->
+          <div class="hero-content flex-col lg:flex-row space-y-4">
+            <!-- Text content -->
+            <div class="flex-1 text-center lg:text-left">
+              <button
+                class="bg-white px-5 py-2 rounded-full text-black font-bold"
+              >
+                <i
+                  class="fa-solid fa-arrow-right .. text-black inline-flex justify-center items-center"
+                ></i>
+                About Us
+              </button>
+              <h2 class="text-2xl lg:text-5xl font-bold pt-5">
+                We design thoughtful, liveable spaces
+              </h2>
+              <p class="py-6">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+              <!-- Card -->
+              <div class="space-y-4">
+                <!-- card div -1 -->
+                <div class="hero-content bg-bg_white rounded-lg">
+                  <img src="assets/commercial.png" />
+                  <div class="text-left">
+                    <h1 class="text-xl font-bold">Commercial</h1>
+                    <p class="py-4 text-gray-500">
+                      The barn house captivates with its blend of rustic charm
+                      and modern.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- card div -2 -->
+                <div class="hero-content bg-bg_white rounded-lg">
+                  <img src="assets/residential.png" />
+                  <div class="text-left">
+                    <h1 class="text-xl font-bold">Residential</h1>
+                    <p class="py-4 text-gray-500">
+                      The barn house captivates with its blend of rustic charm
+                      and modern.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Image div -->
+            <div class="flex-1 max-w-full">
+              <img src="assets/Rectangle.png" class="rounded-lg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rating section -->
+      <section
+        class="w-11/12 mx-auto bg-white rounded-lg flex-row lg:flex justify-around"
+      >
+        <div class="text-center px-7 py-7">
+          <i
+            class="fa-solid fa-message text-black inline-flex justify-center items-center text-2xl"
+          ></i>
+          <h1 class="font-bold text-4xl">235+</h1>
+          <p class="text-gray-500 text-sm">Happy Client Review</p>
+        </div>
+        <div class="text-center px-7 py-7">
+          <i class="fa-solid fa-briefcase text-2xl"></i>
+          <h1 class="font-bold text-4xl">50+</h1>
+          <p class="text-gray-500 text-sm">Work Departments</p>
+        </div>
+        <div class="text-center px-7 py-7">
+          <i class="fa-solid fa-users text-2xl"></i>
+          <h1 class="font-bold text-4xl">30K+</h1>
+          <p class="text-gray-500 text-sm">Our Happy Client</p>
+        </div>
+        <div class="text-center px-7 py-7">
+          <i class="fa-solid fa-user text-2xl"></i>
+          <h1 class="font-bold text-4xl">307+</h1>
+          <p class="text-gray-500 text-sm">Staff Members</p>
+        </div>
+      </section>
+
+      <!-- Our Works Process -->
+      <section class="w-11/12 mx-auto">
+        <div></div>
+      </section>
+    </main>
 
     <!-- Footer section -->
     <footer></footer>
