@@ -203,10 +203,11 @@
       <div class="bg-bg_clr">
         <!-- Design section -->
         <section class="mb-10 lg:mb-20">
-          <div class="hero w-11/12 mx-auto pt-6 lg:pt-16">
-            <!-- <div>
-            <img src="assets/Vector.png" alt="" />
-          </div> -->
+          <div class="hero w-11/12 mx-auto pt-6 lg:pt-16 relative">
+            <!-- Top left img -->
+            <div class="hidden lg:block lg:absolute -top-6 left-4">
+              <img src="assets/Vector.png" alt="" />
+            </div>
             <div class="hero-content flex-col lg:flex-row space-y-4">
               <!-- Text content -->
               <div class="flex-1 text-center lg:text-left">
@@ -319,8 +320,8 @@
           <!-- Card -->
           <div class="flex justify-around flex-col lg:flex-row gap-12">
             <!-- card-1 -->
-            <div class="card bg-bg_pink w-96 shadow-xl">
-              <div class="card-body">
+            <div class="card bg-bg_pink w-full lg:w-1/4 shadow-xl">
+              <div class="card-body w-4/5">
                 <img class="w-8" src="assets/concept.png" alt="" />
                 <h2 class="text-xl font-bold">Concept</h2>
                 <p class="text-gray-700">
@@ -331,8 +332,8 @@
             </div>
 
             <!-- card-2 -->
-            <div class="card bg-bg_yellow w-96 shadow-xl">
-              <div class="card-body">
+            <div class="card bg-bg_yellow w-full lg:w-1/4 shadow-xl">
+              <div class="card-body w-4/5">
                 <img class="w-8" src="assets/flow-chart.png" alt="" />
                 <h2 class="text-xl font-bold">Design Process</h2>
                 <p class="text-gray-700">
@@ -343,8 +344,8 @@
             </div>
 
             <!-- card-3 -->
-            <div class="card bg-bg_green w-96 shadow-xl">
-              <div class="card-body">
+            <div class="card bg-bg_green w-full lg:w-1/4 shadow-xl">
+              <div class="card-body w-4/5">
                 <img class="w-8" src="assets/vision.png" alt="" />
                 <h2 class="text-xl font-bold">Supervision</h2>
                 <p class="text-gray-700">
@@ -355,8 +356,8 @@
             </div>
 
             <!-- card-4 -->
-            <div class="card bg-bg_blue w-96 shadow-xl">
-              <div class="card-body">
+            <div class="card bg-bg_blue w-full lg:w-1/4 shadow-xl">
+              <div class="card-body w-4/5">
                 <img class="w-8" src="assets/budget-planning.png" alt="" />
                 <h2 class="text-xl font-bold">Budget Planning</h2>
                 <p class="text-gray-700">
@@ -472,7 +473,9 @@
           </div>
           <!-- Text div -->
           <div class="text-center pt-5 pb-8">
-            <h1 class="text-4xl font-bold mb-5">Read Our Articles and News</h1>
+            <h1 class="text-4xl font-extrabold mb-5">
+              Read Our Articles and News
+            </h1>
             <p class="text-gray-500">
               The barn house captivates with its blend of rustic charm and
               modern sophistication, <br />
@@ -563,6 +566,114 @@
         </div>
       </section>
 
+      <!-- Client review -->
+      <section class="mb-24 w-11/12 mx-auto">
+        <div
+          class="bg-gradient-to-r from-green-100 to-green-400 rounded-xl grid grid-cols-1 lg:grid-cols-2 text-white px-7 md:px-16"
+        >
+          <!-- Text part -->
+          <div class="flex justify-center items-center overflow-hidden">
+            <div class="w-5/6 text-black">
+              <h1 class="text-5xl font-extrabold mt-10 mb-5">
+                Meet Our Super Clients
+              </h1>
+              <p class="mb-5">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable.
+              </p>
+
+              <div class="w-full lg:w-40">
+                <button
+                  class="w-full bg-btn_primary px-3 py-2 rounded-full text-black font-bold space-x-4"
+                >
+                  See More
+                  <i
+                    class="fa-solid fa-arrow-right -rotate-45 .. w-7 h-7 bg-black rounded-full text-white inline-flex justify-center items-center"
+                  ></i>
+                </button>
+              </div>
+              <!-- <button
+                class="bg-white px-3 py-2 rounded-lg text-orange-500 font-bold"
+              >
+                Show all
+              </button> -->
+            </div>
+          </div>
+
+          <!-- Card part -->
+          <div class="relative py-24">
+            <!-- Middle card -->
+            <div class="absolute z-10 top-44 md:top-52">
+              <div
+                class="h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5"
+              >
+                <div class="absolute -top-7 -left-5 bg-white rounded-full">
+                  <img
+                    class="p-1 w-16 rounded-full border-4 border-blue-500"
+                    src="assets/tonmoysutradahr.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p class="text-gray-500 mb-5">
+                    "Meet Our Super Clients: We proudly collaborate with
+                    innovative and visionary companies, helping them achieve
+                    their goals and transform their industries with our tailored
+                    solutions."
+                  </p>
+                  <h1 class="font-bold">Tonmoy Sutradhar</h1>
+                  <small class="text-gray-500 font-bold">Businessman</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Top card -->
+            <div
+              class="relative h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5 opacity-40 left-8 md:left-32"
+            >
+              <div class="absolute -top-5 -left-5 bg-white rounded-full w-7">
+                <img
+                  class="p-1 w-16 rounded-full border-4 border-blue-500"
+                  src="assets/Tonmoy Sutradhar.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p class="text-gray-500 mb-5">
+                  We are providing the best and suitable home insurance services
+                  for the people who are interested to treatment
+                </p>
+                <h1 class="font-bold">Ilham Yuda</h1>
+                <small class="text-gray-500 font-bold">Businessman</small>
+              </div>
+            </div>
+
+            <!-- Bottom card -->
+            <div
+              class="relative top-10 h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5 opacity-40 left-8 md:left-32"
+            >
+              <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                <img
+                  class="p-1 w-16 rounded-full border-4 border-blue-500"
+                  src="assets/Tonmoy Sutradhar.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p class="text-gray-500 mb-5">
+                  We are providing the best and suitable home insurance services
+                  for the people who are interested to treatment
+                </p>
+                <h1 class="font-bold">Ilham Yuda</h1>
+                <small class="text-gray-500 font-bold">Businessman</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Let’s Discuss Next Project section         -->
       <section class="pt-20 pb-16 p-5 lg:pt-20 banner-container">
         <div class="w-full lg:w-7/12 mx-auto">
@@ -591,21 +702,21 @@
 
           <!-- Input Field -->
           <div class="">
-            <div class="grid grid-cols-2 grid-rows-1 lg:grid-rows-4 gap-4">
+            <div class="grid grid-cols-2 grid-rows-1 lg:grid-rows-3 gap-4">
               <!-- Text input-1 -->
               <div class="space-y-4">
                 <div class="...">
                   <input
                     type="text"
                     placeholder="First Name*"
-                    class="input input-bordered w-full rounded-full text-sm"
+                    class="input w-full rounded-full text-sm"
                   />
                 </div>
                 <div class="...">
                   <input
                     type="text"
                     placeholder="Phone Number*"
-                    class="input input-bordered w-full rounded-full text-sm"
+                    class="input w-full rounded-full text-sm"
                   />
                 </div>
               </div>
@@ -616,31 +727,32 @@
                   <input
                     type="text"
                     placeholder="Last Name*"
-                    class="input input-bordered w-full rounded-full text-sm"
+                    class="input w-full rounded-full text-sm"
                   />
                 </div>
                 <div class="...">
                   <input
                     type="text"
                     placeholder="Email*"
-                    class="input input-bordered w-full rounded-full text-sm"
+                    class="input w-full rounded-full text-sm"
                   />
                 </div>
               </div>
+
               <!-- textarea -->
-              <div class="col-span-2 ... pt-1">
+              <div class="col-span-2 ... pt-0">
                 <label class="form-control">
                   <textarea
-                    class="textarea textarea-bordered h-32 rounded-2xl text-sm"
+                    class="textarea h-32 rounded-2xl text-sm"
                     placeholder="Write your message here"
                   ></textarea>
                 </label>
               </div>
 
               <!-- Button -->
-              <div class="col-span-2 ...">
+              <div class="col-span-2">
                 <button
-                  class="bg-btn_primary px-3 py-2 rounded-full text-black font-bold space-x-4 w-full"
+                  class="bg-btn_primary px-3 py-2 rounded-full text-black font-bold w-full"
                 >
                   Book Consult
                   <i
@@ -686,9 +798,9 @@
         <a class="link link-hover">Blogs</a>
         <a class="link link-hover">Contact Us</a>
       </nav>
-      <div>
+      <div class="w-full lg:w-40">
         <button
-          class="bg-btn_primary px-3 py-2 rounded-full text-black font-bold space-x-4"
+          class="w-full bg-btn_primary px-3 py-2 rounded-full text-black font-bold space-x-4"
         >
           Book Consult
           <i
