@@ -46,7 +46,7 @@
               bg_yellow: "#EFDA6E",
               bg_green: "#A4DAC3",
               bg_blue: "#77AAEA",
-              bg_back: "url('../assets/bg.jpg')",
+              bannerBg: "url('./assets/bg.jpg')",
             },
             fontFamily: {
               Manrope: "Manrope",
@@ -446,7 +446,7 @@
       </section>
 
       <!-- Read Our Articles and News section -->
-      <section class="bg-bg_clr p-20">
+      <section class="bg-bg_clr pt-20 pb-20 lg:p-20">
         <div class="w-11/12 mx-auto">
           <!-- button -->
           <div class="text-center">
@@ -552,9 +552,9 @@
         </div>
       </section>
 
-      <!-- Let’s Discuss Next Project section -->
-      <section class="bg-bg_back bg-no-repeat bg-cover p-16">
-        <div class="w-11/12 mx-auto">
+      <!-- Let’s Discuss Next Project section         -->
+      <section class="bg-bannerBg pt-20 pb-16 p-5 lg:pt-20">
+        <div class="w-full lg:w-7/12 mx-auto">
           <!-- button -->
           <div class="text-center">
             <button
@@ -571,7 +571,7 @@
             <h1 class="text-4xl font-extrabold mb-5">
               Let’s Discuss Next Project
             </h1>
-            <p class="text-gray-500">
+            <p>
               The barn house captivates with its blend of rustic charm and
               modern sophistication, <br />
               featuring weathered wood, sleek metal accents.
@@ -579,11 +579,64 @@
           </div>
 
           <!-- Input Field -->
-          <div>
-            <div class="grid grid-cols-2 gap-4">
-              <div class="...">01</div>
-              <div class="...">02</div>
-              <div class="col-span-2 ...">03</div>
+          <div class="">
+            <div class="grid grid-cols-2 grid-rows-1 lg:grid-rows-4 gap-4">
+              <!-- Text input-1 -->
+              <div class="space-y-4">
+                <div class="...">
+                  <input
+                    type="text"
+                    placeholder="First Name*"
+                    class="input input-bordered w-full rounded-full text-sm"
+                  />
+                </div>
+                <div class="...">
+                  <input
+                    type="text"
+                    placeholder="Phone Number*"
+                    class="input input-bordered w-full rounded-full text-sm"
+                  />
+                </div>
+              </div>
+
+              <!-- Text input-2 -->
+              <div class="space-y-4">
+                <div class="...">
+                  <input
+                    type="text"
+                    placeholder="Last Name*"
+                    class="input input-bordered w-full rounded-full text-sm"
+                  />
+                </div>
+                <div class="...">
+                  <input
+                    type="text"
+                    placeholder="Email*"
+                    class="input input-bordered w-full rounded-full text-sm"
+                  />
+                </div>
+              </div>
+              <!-- textarea -->
+              <div class="col-span-2 ... pt-1">
+                <label class="form-control">
+                  <textarea
+                    class="textarea textarea-bordered h-32 rounded-2xl text-sm"
+                    placeholder="Write your message here"
+                  ></textarea>
+                </label>
+              </div>
+
+              <!-- Button -->
+              <div class="col-span-2 ...">
+                <button
+                  class="bg-btn_primary px-3 py-2 rounded-full text-black font-bold space-x-4 w-full"
+                >
+                  Book Consult
+                  <i
+                    class="fa-solid fa-arrow-right -rotate-45 .. w-7 h-7 bg-black rounded-full text-white inline-flex justify-center items-center"
+                  ></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
