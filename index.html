@@ -31,7 +31,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- CSS -->
-    <style>
+    <!-- <style>
       .banner-container {
         width: 100%;
         /* background-image: url("../assets/bg.jpg"); */
@@ -40,7 +40,7 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
-    </style>
+    </style> -->
 
     <!-- Tailwind configuration CND -->
     <script>
@@ -58,7 +58,7 @@
               bg_yellow: "#EFDA6E",
               bg_green: "#A4DAC3",
               bg_blue: "#77AAEA",
-              bannerBg: "url('./assets/bg.jpg')",
+              // bannerBg: "url('./assets/bg.jpg')",
             },
             fontFamily: {
               Manrope: "Manrope",
@@ -676,7 +676,9 @@
       </section>
 
       <!-- Let’s Discuss Next Project section -->
-      <section class="pt-20 pb-16 p-5 lg:pt-20 lg:pb-20 banner-container">
+      <section
+        class="pt-20 pb-16 p-5 lg:pt-20 lg:pb-20 bg-[url('assets/bg.jpg')] bg-cover bg-center h-auto w-full"
+      >
         <div class="w-full lg:w-7/12 mx-auto">
           <!-- button -->
           <div class="text-center">
